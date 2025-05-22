@@ -21,8 +21,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                sh '''
-                        echo "Hello, this is build"
+                sh ''' 
                         echo "project: $PROJECT"
                         echo "Hello ${params.PERSON}"
 
