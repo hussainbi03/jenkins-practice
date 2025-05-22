@@ -28,6 +28,17 @@ pipeline {
                 '''
             }
             }
+        post {
+            always {
+                echo "I will alwats say hello again"
+            }
+            failure {
+                echo "pipeline has failed"
+            }
+            success {
+                echo "pipeline is succesfully ran"
+            }
+        }    
             }
 
     }
