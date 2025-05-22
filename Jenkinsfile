@@ -5,6 +5,10 @@ pipeline {
         COMPONENT = 'BACKEND'
         DEPLOY_TO = 'PRODUCTION'
     }
+    options {
+        disableConcurrentBuilds()
+
+    }
     stages {
         stage('Build') {
             steps {
